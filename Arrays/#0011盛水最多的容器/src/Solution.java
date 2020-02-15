@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /*
 https://leetcode-cn.com/problems/container-with-most-water/
 
