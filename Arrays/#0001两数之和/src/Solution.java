@@ -17,6 +17,7 @@ https://leetcode-cn.com/problems/two-sum/
 所以返回 [0, 1]
 
  * */
+
 public class Solution {
 	public static void main(String[] args) {
 		int[] res1 = twoSum1(new int[] {2,7,11,15},13);

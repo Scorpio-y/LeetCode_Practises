@@ -10,6 +10,7 @@ https://leetcode-cn.com/problems/container-with-most-water/
 说明：你不能倾斜容器，且 n 的值至少为 2。
 
  * */
+
 public class Solution {
 	public static void main(String[] args) {
 		int res1 = maxArea1(new int[] {1,8,6,2,5,4,8,3,7});
@@ -32,9 +33,8 @@ public class Solution {
     
 	// 2. 双指针，一次遍历
     public static int maxArea2(int[] height) {
-    	int len = height.length;
     	int res = 0;
-    	int left=0, right=len-1;
+    	int left=0, right=height.length-1;
     	while(left<right) {
     		res = Math.max(res, (right-left)*Math.min(height[left], height[right]));
     		if(height[left]<height[right]) left++;

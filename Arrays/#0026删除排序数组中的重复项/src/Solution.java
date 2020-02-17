@@ -12,13 +12,15 @@ https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 说明：输入数组是以“引用”方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。
 
  * */
+
 public class Solution {
 	public static void main(String[] args) {
-		int[] nums = new int[] {0,0,1,1,1,2,2,3,3,4};
-		int res1 = removeDuplicates1(nums);
-//		int res2 = removeDuplicates2(nums);
-		System.out.println(res1);System.out.println(Arrays.toString(nums));
-//		System.out.println(res2);System.out.println(Arrays.toString(nums));
+		int[] nums1 = new int[] {0,0,1,1,1,2,2,3,3,4};
+		int[] nums2 = new int[] {0,0,1,1,1,2,2,3,3,4};
+		int res1 = removeDuplicates1(nums1);
+		int res2 = removeDuplicates2(nums2);
+		System.out.println(res1);System.out.println(Arrays.toString(nums1));
+		System.out.println(res2);System.out.println(Arrays.toString(nums2));
 	}
 	
 	// 1. 双指针法（快慢指针）
